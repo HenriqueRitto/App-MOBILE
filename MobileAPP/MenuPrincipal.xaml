@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAPP.MenuPrincipal"
+             Title="Menu Principal"
+             BackgroundColor="White">
+
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="Start" >
+            <Label Text="MENU PRINCIPAL"                   
+                   FontAttributes="Italic"                    
+                   TextColor="Black"                    
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Center"                    
+                   FontSize="40" />          
+
+
+            <Button x:Name="btnCadastroFornecedores"
+                    Text="Cadastro de Fornecedores"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Margin="0,40,0,0"
+                    FontSize="Medium"
+                    VerticalOptions="Center"/>
+            
+
+            <Button x:Name="btnCadastroProdutos"
+                    Text="Cadastro de Produtos"
+                    Clicked="Button_Clicked_1"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Margin="0,40,0,0"
+                    FontSize="Medium"
+                    VerticalOptions="Center"/>
+
+
+            <Button x:Name="btnCadastroClientes"
+                    Text="Cadastro de Clientes"
+                    Clicked="Button_Clicked_2"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    Margin="0,40,0,0"
+                    FontSize="Medium"
+                    VerticalOptions="Center"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

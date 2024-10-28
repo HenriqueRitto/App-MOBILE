@@ -1,0 +1,46 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAPP.CadastroProdutos"
+             Title="Cadastro de Produto"
+             BackgroundColor="White">
+    
+  <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Entry x:Name="NomeProduto"                    
+                   Placeholder="Digite o nome do produto"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="0,40,0,0"/>
+
+            <Editor x:Name="descricaoProduto" 
+                    Placeholder="Digite a descrição do produto"                     
+                    TextColor="Black"
+                    Margin="0,40,0,0"
+                    HorizontalOptions="Center"                    
+                    HeightRequest="100" />
+
+            <Entry x:Name="precoProduto" 
+                   Placeholder="Digite o preço" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="0,40,0,0"
+                   Keyboard="Numeric"/>
+
+            <Entry x:Name="quantidadeProduto" 
+                   Placeholder="Digite a quantidade" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   Margin="0,40,0,0"
+                   Keyboard="Numeric" />
+
+            <Button x:Name="CadastroProduto"
+                    Text="Cadastrar Produto"
+                    TextColor="White"
+                    Clicked="CadastroProduto_Clicked"
+                    HorizontalOptions="Center"
+                    Margin="0,40,0,0"
+                    BackgroundColor="Green"/>
+
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
